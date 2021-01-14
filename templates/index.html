@@ -1,311 +1,336 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content=" width=device-width,initial-scale=1" >
+    <meta name="viewport" content=" width=device-width,initial-scale=1">
 
 
-    <title>Second one</title>
+    <title>Rahman cm</title>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <style>
-        .bs-example{
+        .bs-example {
             margin: 0px;
-
         }
-
-      body{
         
-          -webkit-user-select: none;
-     -moz-user-select: -moz-none;/* to disable the selection on text */
-      -ms-user-select: none;
-          user-select: none;
-        background: url('https://res.cloudinary.com/rahmancm/image/upload/v1602962680/home_sec_tyg7iw.jpg') no-repeat;
-        width: 100%;
-        height: 100%
-        margin-top:0px;
-        border: border-box;
-        /* Set a specific height */
- min-height: 500px;
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: -moz-none;
+            /* to disable the selection on text */
+            -ms-user-select: none;
+            user-select: none;
+            background: url('https://res.cloudinary.com/rahmancm/image/upload/v1602962680/home_sec_tyg7iw.jpg') no-repeat;
+            width: 100%;
+            height: 100%;
+            margin-top: 0px;
+            border: border-box;
+            /* Set a specific height */
+            min-height: 500px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #toper {
+            font-size: 18px;
+            font-weight: normal;
+        }
+        
+        .nav-link:hover {
+            font-weight: bolder;
+            border-bottom: 2px solid white;
+        }
+        
+        div.container {
+            font-size: 150%;
+            padding-top: 50px;
+            margin-top: 250px;
+        }
+        
+        .btn {
+            margin-top: 30px;
+            background: red;
+        }
+        
+        .btn:hover {
+            background: red;
+            transform: scale(1.1);
+        }
+        
+        .jumbo {
+            opacity: 1;
+            height: 500px;
+            width: 1200px;
+        }
+        
+        .container-fluid {
+            margin-top: 400px;
+            padding: 0px;
+            border-radius: 0px;
+        }
+        
+        .jimbo {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+        div.row {
+            background-color: white;
+            padding: 70px;
+            text-align: center;
+            font-family: 'Roboto Slab', serif;
+        }
+        
+        .jumbotron {
+            width: 100%;
+        }
+        
+        .jumbotron>h1 {
+            text-align: center;
+            font-family: 'Comfortaa', cursive;
+        }
+        
+        .jumbotron>h5 {
+            margin-top: 20px;
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+        }
+        
+        .fa {
+            font-size: 20px;
+            padding-left: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        /*  a hover effect for the icons */
+        
+        .fa:hover {
+            opacity: 0.5;
+            color: black;
+            text-decoration: none;
+        }
+        
+        @media (min-width:100px) and (max-width:768px) {
+            body {
+                width: 20%;
+                float: left;
+            }
+            #toper {
+                text-align: center;
+                background: rgba(0, 0, 0, 0.5);
+                border-bottom: 1px solid white;
+            }
+            div.achieve {
+                margin-right: 20px;
+                opacity: 0.8;
+            }
+            div.achieve p {
+                margin-right: 34px;
+            }
+        }
+        
+        html,
+        body {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+        
+        .contin {
+            float: left;
+            text-align: center;
+            text-decoration: none;
+            background: none;
+        }
+        
+        div.about {
+            margin-top: 0px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            margin-left: 10px;
+            color: white;
+        }
+        
+        .about>ul>li {
+            padding: 10px;
+            font-family: sans-serif;
+        }
+        
+        div.about>ul>li:hover {
+            transform: scale(1.03);
+        }
+        
+        footer,
+        footer>a {
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .navbar-toggler {
+            width: 50px;
+            height: 38px;
+            background-color: white;
+            border: none;
+        }
+        
+        .navbar-toggler .line {
+            width: 100%;
+            float: left;
+            height: 2px;
+            background-color: #fff;
+            margin-bottom: 5px;
+        }
+        
+        div.icon1>a {
+            padding-bottom: 10px;
+            color: white;
+        }
+        
+        div.icon1 {
+            float: right;
+            padding-left: 80px;
+            width: 20%;
+        }
+        
+        div.icon1>a:hover {
+            color: gray;
+        }
+        
+        .column {
+            overflow-x: hidden;
+        }
+        
+        div.achieve {
+            border-radius: 30px;
+            padding-top: 0px;
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            color: white;
+        }
+        /* For contact page */
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* Style inputs */
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            ;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            height: 27px;
+            border-radius: 5px;
+        }
+        
+        input[type=submit] {
+            background-color: gray;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        input[type=submit]:hover {
+            background-color: red;
+            transform: scale(1.1);
+        }
+        /* Style the container/contact section */
+        
+        .containers {
+            border-radius: 5px;
+            background-color: none;
+            padding: 0px;
+            margin: 0% 20% 0% 20%;
+        }
+        /* Create two columns that float next to each other */
+        
+        .columns {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+        }
+        /* Clear floats after the columns */
+        
+        .rowg:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .columns,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+        
+        div.columns img {
+            border-radius: 5px;
+            margin-top: 100px;
+            opacity: 0.8;
+        }
+        
+        .list-unstyled {
+            padding-right: 10px;
+        }
+        
+        div.achieved {
+            padding-top: 0px;
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            font-size: small;
+        }
+        
+        .achieved h2 {
+            color: rgb(255, 255, 255)2, 192, 192)2, 192, 192)2, 192, 192);
+        }
+        
+        div.achieved:hover {
+            -webkit-box-shadow: 3px 2px 3px 2px rgba(255, 255, 253, 0.14);
+            box-shadow: 3px 2px 3px 2px rgba(255, 255, 253, 0.14);
+        }
+        
+        .underline {
+            border-bottom: 3px red solid;
+        }
+        
+        .row>div:hover {
+            transform: scale(1.09);
+        }
+        
+        .row>div>small {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .row>div>small>p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
 
- /* Create the parallax scrolling effect */
- background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
-}
-#toper{
-  font-size: 18px;
-
-  font-weight:normal;
-}
-.nav-link:hover{
-  font-weight: bolder;
-  border-bottom: 2px solid white;
-}
-div.container{
-  font-size: 150%
-  padding-top:50px;
-  margin-top: 250px;
-
-
-
-}
-.btn{
-  margin-top: 30px;
-  background: red;
-
-}
-.btn:hover{
-  background: red;
-  transform: scale(1.1);
-}
-.jumbo{
-  opacity: 1;
- height: 500px;
- wodth:1200px;
-}
-.container-fluid{
-  margin-top:400px;
-  padding:0px;
-  border-radius: 0px;
-
-
-}
-.jimbo{
-  margin-left: 0px;
-  margin-right: 0px;
-}
-div.row{
-  background-color: white;
-  padding:70px;
-  text-align: center;
-  font-family: 'Roboto Slab', serif;
-
-}
-.jumbotron{
-  width: 100%;
-}
-.jumbotron >h1{
-  text-align: center;
-  font-family: 'Comfortaa', cursive;
-
-}
-.jumbotron >h5{
-  margin-top: 20px;
-font-family: 'Roboto Slab', serif;
-text-align: center;
-}
-
- .fa {
-
-     font-size: 20px;
-    padding-left: 10px;
-
-     text-decoration: none;
-
-
-     color: white;
-
-   }
-
- /*  a hover effect for the icons */
- .fa:hover {
-   opacity: 0.5;
-   color:black;
-   text-decoration:  none;
- }
-
-@media (min-width:100px) and (max-width:768px) {
-  body{
-    width:20%;
-  float:left;
-  }
-  #toper{
-    text-align: center;
-    background: black;
-    opacity: 0.4;
-    border-bottom:1px solid white;
-
-  }
-  div.achieve {
- margin-right:20px;
- opacity:0.8;
-  }
-  div.achieve p{
-    margin-right:34px;
-  }
-}
-
-html,body
-{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
-
-
-
- .contin{
-    float: left;
-    text-align: center;
-    text-decoration: none;
-    background: none;
-
-
- }
-
-div.about{
-
-margin-top:0px;
-font-family: 'Roboto', sans-serif;
-font-weight: bold;
-margin-left: 10px;
-color: white;
-
-
- }
- .about >ul >li{
-
-   padding: 10px;
-   font-family:sans-serif;
-
- }
-div.about >ul >li:hover{
-
-    transform: scale(1.05);
-  }
-  footer,footer>a{
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-  }
-
-.navbar-toggler{
-    width: 50px;
-    height: 38px;
-    background-color: white;
-    border:none;
-}
-
-.navbar-toggler .line{
-    width: 100%;
-    float: left;
-    height: 2px;
-    background-color: #fff;
-    margin-bottom: 5px;
-}
-div.icon1 >a{
-
-   padding-bottom: 10px;
-
-   color:white;
-}
-div.icon1{
-  float:right;
-  padding-left:80px;
-  width:20%;
-}
-div.icon1 >a:hover{
-      color:gray;
-
-  }
-  .column{
-    overflow-x: hidden;
-}
-
-div.achieve{
-
-   border-radius: 30px;
-   padding-top: 0px;
-   background:black;
-   text-align:center;
-   color:white;
-
-
-
-}
-
- /* For contact page */
- * {
-  box-sizing: border-box;
-}
-
-/* Style inputs */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: none;;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  height: 27px;
-  border-radius: 5px;
-}
-
-input[type=submit] {
-  background-color: black;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-input[type=submit]:hover {
-  background-color: red;
-  transform: scale(1.1);
-
-}
-
-/* Style the container/contact section */
-.containers {
-  border-radius: 5px;
-  background-color: none;
-  padding: 0px;
-  margin:0% 20% 0% 20%;
-
-}
-
-/* Create two columns that float next to each other */
-.columns {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-
-/* Clear floats after the columns */
-.rowg:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .columns, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-div.columns img{
-  border-radius: 5px;
-  margin-top: 100px;
-  opacity:0.8;
-}
-      </style>
-  </head>
-
-  <body>
+<body>
 
 
 
@@ -317,7 +342,7 @@ div.columns img{
             <a href="/" class="navbar-brand">
                 <img src="https://res.cloudinary.com/rahmancm/image/upload/v1603568140/png-transparent-web-development-software-developer-web-developer-computer-icons-world-wide-web-web-design-logo-sign_o5pwzq.png" class="rounded-circle" height="40" alt="development">
             </a>
-            <button style="border-color:white;" id="navbarToggle"  type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <button style="border-color:white;" id="navbarToggle" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span style="color:white; " class="navbar-toggler-icon"></span>
             </button>
 
@@ -332,143 +357,202 @@ div.columns img{
             </div>
         </nav>
     </div>
-<div class="container" style="color:white;">
-  <h1>I help grow brands, create </h1>
-  <h1>experiences and solve </h1>
-  <h1>business problems</h1>
-  <button type="button" class="btn btn-secondary btn-lg" name="button"> <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=arahmancm@gmail.com&body="></a>Get in Touch </button>
-  <div class="icon1" >
-              <a style="color:blue;" href="http://www.facebook.com/rahman.cm" class="fa fa-facebook"></a>
-              <a  style="color:lightblue;" href="" class="fa fa-twitter"></a>
-              <a style="color:#089cff" href="#" class="fa fa-linkedin"></a>
+    <div class="container" style="color:white;">
+        <h1>I help grow brands, create </h1>
+        <h1>experiences and solve </h1>
+        <h1>business problems</h1>
+        <button type="button" class="btn btn-secondary btn-lg" name="button"> <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=arahmancm@gmail.com&body="></a>Get in Touch </button>
+        <div class="icon1">
+            <a style="color:blue;" href="http://www.facebook.com/rahman.cm" class="fa fa-facebook"></a>
+            <a style="color:lightblue;" href="" class="fa fa-twitter"></a>
+            <a style="color:#089cff" href="#" class="fa fa-linkedin"></a>
 
-              <a style="color:#ff087b;" href="http://www.instagram.com/rahman.cm" class="fa fa-instagram"></a>
-              <a style="color:#fc0b03;"href="#" class="fa fa-pinterest"></a>
-              <a  style="color:#efff08" href="" class="fa fa-snapchat-ghost"></a>
-
-
-
-  </div>
-</div>
+            <a style="color:#ff087b;" href="http://www.instagram.com/rahman.cm" class="fa fa-instagram"></a>
+            <a style="color:#fc0b03;" href="#" class="fa fa-pinterest"></a>
+            <a style="color:#efff08" href="" class="fa fa-snapchat-ghost"></a>
+            <a style="color:white;" href="https://github.com/rahmancm" class="fa fa-github"></a>
 
 
 
-<div class="container-fluid">
-    <div class="jumbotron " style='background:white;margin-right:0px;margin-left:0px;'>
-      <h1>LET'S BUILD SOMETHING </h1>
-       <h1>AMAZING TOGETHER</h1>
-        <h5 class="lead">In today's world internet is the most popular way of connecting with the people.Having a website and online presence strategy allows you to market your business online. A website is also important because it helps to establish credibility as a business. Websites usually provide a map and directions to the company's shops or offices for visitors to find their location easily.</h5>
-</div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="jumbotron " style='background:white;margin-right:0px;margin-left:0px;'>
+            <h1>LET'S BUILD SOMETHING </h1>
+            <h1>AMAZING TOGETHER</h1>
+            <h5 class="lead">In today's world internet is the most popular way of connecting with the people.Having a website and online presence strategy allows you to market your business online. A website is also important because it helps to establish credibility
+                as a business. Websites usually provide a map and directions to the company's shops or offices for visitors to find their location easily.</h5>
+        </div>
     </div>
     <hr>
     <div class="row box effect5 ">
-        <div class="col-md-6 column" style="margin-right-left: 30px; ' ">
-            <img src="https://res.cloudinary.com/rahmancm/image/upload/v1602956049/Untitled_ypqqi5.png"   alt="" class="mr-3 mt-3 rounded-circle" style="width:400px;">
+        <div class="col-md-6 column">
+            <img src="https://res.cloudinary.com/rahmancm/image/upload/v1602956049/Untitled_ypqqi5.png" alt="" class="mr-3 mt-3 rounded-circle" style="width:400px;">
 
         </div>
 
         <div class="col-md-6 column box effect5">
             <h2>Services</h2>
-            <p>Offer a better return on investment than any other form of advertising. If you're planning to market your business, a website should be your first priority. Over time the relatively low investment of getting a business website will pay dividends by driving you new customers and building your brand</p>
+            <p>Offer a better return on investment than any other form of advertising. If you're planning to market your business, a website should be your first priority. Over time the relatively low investment of getting a business website will pay dividends
+                by driving you new customers and building your brand</p>
 
         </div>
     </div>
 
-     <hr>
+    <hr>
 
-  <div class="container about  col-md-12" id="about">
+    <div class="container about  col-md-12" id="about">
 
-<img src="https://res.cloudinary.com/rahmancm/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1602760619/45887859_2201546253191552_9219548330550362112_o.jpg_bt01rs.jpg"   alt="" class="mr-3 mt-3 rounded-circle" style="width:350px; float:right; opacity:0.5;">
-     <p>My name is <strong>Rahman CM</strong> , I'm a software engineer based in KERALA,INDIA.
-<br>I love designing and building creative functional website. <br>
-Here are a few technologies I've been working with recently:
- <ul>
-   <li>HTML</li>
-   <li>CSS</li>
-   <li>JS</li>
-   <li>Python</li>
-   <li>Django</li>
+        <img src="https://res.cloudinary.com/rahmancm/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1602760619/45887859_2201546253191552_9219548330550362112_o.jpg_bt01rs.jpg" alt="" class="mr-3 mt-3 rounded-circle" style="width:350px; float:right; opacity:0.5;">
+        <p>My name is <strong>Rahman CM</strong> , I'm a software engineer based in KERALA,INDIA.
+            <br>I love designing and building creative functional website. <br> Here are a few technologies I've been working with recently:
+            <ul class="list-unstyled">
+                <li>React.js</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>Python</li>
+                <li>Django</li>
 
- </ul>
- I enjoy turning complex problems into simple, beautiful and intuitive designs.<br> When I'm not coding, tweeting or pushing pixels, you'll find me traveling,<br> gardening or working out in the park.
-     </p>
-       </div>
-       <div class="jumbotron achieve " >
-         <img src="https://res.cloudinary.com/rahmancm/image/upload/v1603021312/431-4310666_achievements-achievement-icon-white-png_citp3c.png"   alt="" class="mr-3 mt-3 rounded" style="width:40px;">
-         <h1>Achievements</h1>
-         <ul>
-           <p><a href="https://coursera.org/share/9421b06232426561d2ded5848d19b7b9">Crash Course on Python by Google</a></p>
-           <p> <a href="http://ude.my/UC-47c5efab-af84-4aa3-8d22-0792f4261904">Python and Django Full Stack Web Developer Bootcamp</a></p>
-           <p> <a href="http://ude.my/UC-7909bd49-2972-4c6f-8de7-7fef3acc8782">Django 3 Course: Build Python Based Web App</a></p>
-           <p> <a href="https://freecodecamp.org/certification/rahmancm/responsive-web-design ">Responsive Web Design from freeCodeCamp</a></p>
-         </ul>
+            </ul>
+            I enjoy turning complex problems into simple, beautiful and intuitive designs.<br> When I'm not coding, tweeting or pushing pixels, you'll find me traveling,<br> gardening or working out in the park.
+        </p>
+    </div>
+    <div class='projects container achieved'>
+        <h1 class='text-white'>My Projects</h1>
+        <div class="underline">
 
-       </div>
+        </div>
+        <div class="container mt-0  ">
+            <div class="row  bg-transparent  ">
+                <div class="col-sm-4  mb-1  ">
+                    <a href="https://github.com/rahmancm/-Hunters-Job-Board"><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610631808/Potfolio%20Images/job_board_n9dvly.jpg" height='200px' width='300px' alt=""></a>
+                    <small class="text-white text-center">
+                        <p>Job Board</p> &nbsp; Platform to apply and post Jobs by the employees and employers respectively </small>
+                </div>
+                <div class="col-sm-4  mb-1 ">
+                    <a href="https://ipsum-generator-cm.netlify.app"><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610632880/Potfolio%20Images/IpsumGenerator_wdoqxw.jpg" height='200px' width='300px' alt=""></a>
+                    <small class="text-white text-center"><p>IpsumGenerator</p> &nbsp; Random Pragraph generator by specifying how many paragraphs you want  </small>
+                </div>
+                <div class="col-sm-4  mb-1 ">
+                    <a href="https://the-cocktail-shop.netlify.app"><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610633798/Potfolio%20Images/cockt6ailshop_zctqnj.jpg" height='200px' width='300px' alt=""></a>
+                    <small class="text-white text-center"><p>The CocktailShop</p> &nbsp; React application that searches the Coktails based on searching keyword</small>
+                </div>
+            </div>
+            <div class="row  bg-transparent mt-0 ">
+                <div class="col-sm-4  mb-1   ">
+                    <a href="https://menus-submenu-hover.netlify.app"><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610634175/Potfolio%20Images/menuPage_yxbwog.jpg" height='200px' width='300px' alt=""></a>
+                    <small class="text-white text-center">
+                      <p>Landing page</p> &nbsp; Product landing page with menu hover effect in ReactJS </small>
+                </div>
+                <div class="col-sm-4  mb-1 ">
+                    <a href=""><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610640079/Potfolio%20Images/expenseCalulator_jfi28h.jpg" height='200px' width='300px' alt=""></a>
+                    <small class="text-white text-center"><p>Expense Manager</p> &nbsp; React App to calculate the income and expenses</small>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container achieved  ">
+        <img src="https://res.cloudinary.com/rahmancm/image/upload/v1603021312/431-4310666_achievements-achievement-icon-white-png_citp3c.png" alt="" class="mr-3 mt-3 rounded" style="width:40px;">
+        <h2 style="color: silver;">Achievements</h2>
+
+        <div class="table-responsive col-12 ">
+            <table class="table table-striped  text-white">
+                <tbody>
+                    <tr>
+                        <td>Crash Course on Python by Google</td>
+                        <td> <a href="https://coursera.org/share/9421b06232426561d2ded5848d19b7b9"><i class="fa fa-external-link"></i></a> </td>
+                    </tr>
+                    <tr>
+                        <td>Python and Django Full Stack Web Developer Bootcamp</td>
+                        <td> <a href="http://ude.my/UC-47c5efab-af84-4aa3-8d22-0792f4261904"><i class="fa fa-external-link"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Django 3 Course: Build Python Based Web App</td>
+                        <td><a href="http://ude.my/UC-7909bd49-2972-4c6f-8de7-7fef3acc8782"><i class="fa fa-external-link"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Responsive Web Design from freeCodeCamp</td>
+                        <td><a href="https://freecodecamp.org/certification/rahmancm/responsive-web-design"><i class="fa fa-external-link"></i></a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
     <div class="containers">
-   <div style="text-align:center ;color:white;">
-     <h2>Contact me</h2>
-     <p>If you have any queries,  leave me a message here:</p>
-   </div>
-   <div class="rowg " style="color:white;">
-     <div class="columns">
-       <img src="https://res.cloudinary.com/rahmancm/image/upload/v1603303536/istockphoto-1170264057-612x612_hif9sq.jpg" style="width:100%">
-     </div>
-     <div class="columns">
-       <form action="">
-         <label for="fname">First Name</label>
-         <input type="text" id="fname" name="firstname" placeholder="Your name..">
-         <label for="lname">Last Name</label>
-         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-         <label for="country">Country</label>
-         <select id="country" name="country" >
+        <div style="text-align:center ;color:white;">
+            <h2>Contact me</h2>
+            <p>If you have any queries, leave me a message here:</p>
+        </div>
+        <div class="rowg " style="color:white;">
+            <div class="columns">
+                <img src="https://res.cloudinary.com/rahmancm/image/upload/v1606332846/Letter_between_friends_f1ohbj.png" style="width:100%">
+            </div>
+            <div class="columns">
+                <form action="">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
 
-           <option value="australia">India</option>
-           <option value="canada">Dubia</option>
-           <option value="usa">Qatar</option>
+           <option value="ind">India</option>
+           <option value="dxb">Dubai</option>
+           <option value="qtr">Qatar</option>
+           <option value="other">Otherr</option>
+           
          </select>
-         <label for="subject">Subject</label>
-         <textarea id="subject" name="subject" placeholder="Write something.." style="height:80px"></textarea>
-         <input type="submit" value="Submit">
-       </form>
-     </div>
-   </div>
- </div>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:80px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
 
     <div class="jumbotron contin box effect7" id="contact">
-      <a style="color:white;" href="http://www.facebook.com/rahman.cm" class="fa fa-facebook"></a>
-      <a  style="color:lightblue;" href="" class="fa fa-twitter"></a>
-      <a style="color:#089cff" href="#" class="fa fa-linkedin"></a>
+        <a style="color:white;" href="http://www.facebook.com/rahman.cm" class="fa fa-facebook"></a>
+        <a style="color:lightblue;" href="" class="fa fa-twitter"></a>
+        <a style="color:#089cff" href="#" class="fa fa-linkedin"></a>
 
-      <a style="color:#ff087b;" href="http://www.instagram.com/rahman.cm" class="fa fa-instagram"></a>
-      <a style="color:#fc0b03;"href="#" class="fa fa-pinterest"></a>
-      <a  style="color:#efff08" href="" class="fa fa-snapchat-ghost"></a>
+        <a style="color:#ff087b;" href="http://www.instagram.com/rahman.cm" class="fa fa-instagram"></a>
+        <a style="color:#fc0b03;" href="#" class="fa fa-pinterest"></a>
+        <a style="color:#efff08" href="" class="fa fa-snapchat-ghost"></a>
 
 
 
     </div>
     <hr>
     <footer>
-                <p>Email: arahmancm@gmail.com</p>
-                <p> Ph :903 789 4567</p>
-                <p>Copyright &copy; 2020</p>
+        <p>Email: arahmancm@gmail.com</p>
+        <p> Ph :903 789 4567</p>
+        <p>Copyright &copy; 2020</p>
 
 
-                <a href="#" >Terms of Use</a>
-                <span >|</span>
-                <a href="#" >Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <span>|</span>
+        <a href="#">Privacy Policy</a>
 
 
     </footer>
-<script>
-  $(function(){
-    $("#navbarToggle").blur(function(event){          /*to hide the navbar if it is not in focus*/
-      var screenWidth=window.innerWidth;
-      if( screenWidth <768){
-        $("#navbarCollapse").collapse('hide');
-      }
-    });
-  });
-</script>
+    <script>
+        $(function() {
+            $("#navbarToggle").blur(function(event) { /*to hide the navbar if it is not in focus*/
+                var screenWidth = window.innerWidth;
+                if (screenWidth < 768) {
+                    $("#navbarCollapse").collapse('hide');
+                }
+            });
+        });
+    </script>
 
-  </body>
+</body>
+
 </html>
