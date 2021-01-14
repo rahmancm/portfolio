@@ -310,7 +310,22 @@
         div.achieved:hover {
             -webkit-box-shadow: 3px 2px 0px 0px rgba(255, 255, 253, 0.14);
             box-shadow: 3px 2px 0px 0px rgba(255, 255, 253, 0.14);
-            transform: scaleX(1.007);
+        }
+        
+        .underline {
+            border-bottom: 3px red solid;
+        }
+        
+        .row>div:hover {
+            transform: scale(1.09);
+        }
+        
+        .row>div>small {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .row>div>small>p {
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -406,8 +421,40 @@
             I enjoy turning complex problems into simple, beautiful and intuitive designs.<br> When I'm not coding, tweeting or pushing pixels, you'll find me traveling,<br> gardening or working out in the park.
         </p>
     </div>
-    <div class='projects achieved'>
+    <div class='projects container achieved'>
+        <h1 class='text-white'>My Projects</h1>
+        <div class="underline">
 
+        </div>
+        <div class="container mt-0  ">
+            <div class="row  bg-transparent  ">
+                <div class="col-sm-4  mb-1  ">
+                    <a href="https://github.com/rahmancm/-Hunters-Job-Board"><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610631808/Potfolio%20Images/job_board_n9dvly.jpg" height='200px' width='300px' alt=""></a>
+                    <small class="text-white text-center">
+                      <p>Job Board</p> &nbsp; Platform to apply and post Jobs by the employees and employers respectively </small>
+                </div>
+                <div class="col-sm-4  mb-1 ">
+                    <a href="https://ipsum-generator-cm.netlify.app"><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610632880/Potfolio%20Images/IpsumGenerator_wdoqxw.jpg" height='200px' width='300px' alt=""></a>
+                    <small class="text-white text-center"><p>IpsumGenerator</p> &nbsp; Random Pragraph generator by specifying how many paragraphs you want  </small>
+                </div>
+                <div class="col-sm-4  mb-1 ">
+                    <a href="https://the-cocktail-shop.netlify.app"><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610633798/Potfolio%20Images/cockt6ailshop_zctqnj.jpg" height='200px' width='300px' alt=""></a>
+                    <small class="text-white text-center"><p>The CocktailShop</p> &nbsp; React application that searches the Coktails based on searching keyword</small>
+                </div>
+            </div>
+            <div class="row  bg-transparent mt-0 ">
+                <div class="col-sm-4  mb-1   ">
+                    <a href="https://menus-submenu-hover.netlify.app"><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610634175/Potfolio%20Images/menuPage_yxbwog.jpg" height='200px' width='300px' alt=""></a>
+                    <small class="text-white text-center">
+                    <p>Landing page</p> &nbsp; Product landing page with menu hover effect in ReactJS </small>
+                </div>
+                <div class="col-sm-4  mb-1 ">
+                    <a href=""><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610640079/Potfolio%20Images/expenseCalulator_jfi28h.jpg" height='200px' width='300px' alt=""></a>
+                    <small class="text-white text-center"><p>Expense Manager</p> &nbsp; React App to calculate the income and expenses</small>
+                </div>
+
+            </div>
+        </div>
     </div>
     <div class="container achieved  ">
         <img src="https://res.cloudinary.com/rahmancm/image/upload/v1603021312/431-4310666_achievements-achievement-icon-white-png_citp3c.png" alt="" class="mr-3 mt-3 rounded" style="width:40px;">
