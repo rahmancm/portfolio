@@ -1,6 +1,340 @@
-details{
-  font-size:1.5em;
-   color:white;
-    text-align:center;
+details {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
     font-style: italic;
+}
+
+.bs-example {
+    margin: 0px;
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    /* to disable the selection on text */
+    -ms-user-select: none;
+    user-select: none;
+    background: url('https://res.cloudinary.com/rahmancm/image/upload/v1602962680/home_sec_tyg7iw.jpg') no-repeat !important;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    border: border-box;
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#toper {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.nav-link:hover {
+    font-weight: bolder;
+    border-bottom: 2px solid white;
+}
+
+div.container {
+    font-size: 150%;
+    padding-top: 50px;
+    margin-top: 250px;
+}
+
+.btn {
+    margin-top: 30px;
+    background: red;
+}
+
+.btn:hover {
+    background: red;
+    transform: scale(1.1);
+}
+
+.jumbo {
+    opacity: 1;
+    height: 500px;
+    width: 1200px;
+}
+
+.container-fluid {
+    margin-top: 400px;
+    padding: 0px;
+    border-radius: 0px;
+}
+
+.jimbo {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+div.row {
+    background-color: white;
+    padding: 70px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.jumbotron {
+    width: 100%;
+}
+
+.jumbotron>h1 {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+.jumbotron>h5 {
+    margin-top: 20px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.fa {
+    font-size: 20px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/*  a hover effect for the icons */
+
+.fa:hover {
+    opacity: 0.5;
+    color: black;
+    text-decoration: none;
+}
+
+@media (min-width:100px) and (max-width:768px) {
+    body {
+        width: 20%;
+        float: left;
+    }
+    #toper {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid white;
+    }
+    div.achieve {
+        margin-right: 20px;
+        opacity: 0.8;
+    }
+    div.achieve p {
+        margin-right: 34px;
+    }
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.contin {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+}
+
+div.about {
+    margin-top: 0px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+    color: white;
+    font-size: 18px;
+    ;
+}
+
+.about>ul>li {
+    padding: 10px;
+    font-family: sans-serif;
+    margin-left: 20px;
+    width: 30%
+}
+
+div.about>ul>li:hover {
+    transform: scale(1.009);
+    font-size: 16px;
+}
+
+footer,
+footer>a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-toggler {
+    width: 50px;
+    height: 38px;
+    background-color: white;
+    border: none;
+}
+
+.navbar-toggler .line {
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+div.icon1>a {
+    padding-bottom: 10px;
+    color: white;
+}
+
+div.icon1 {
+    float: right;
+    padding-left: 80px;
+    width: 20%;
+}
+
+div.icon1>a:hover {
+    color: gray;
+}
+
+.column {
+    overflow-x: hidden;
+}
+
+div.achieve {
+    border-radius: 30px;
+    padding-top: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+}
+
+
+/* For contact page */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Style inputs */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    ;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    height: 27px;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    background-color: gray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+    transform: scale(1.1);
+}
+
+
+/* Style the container/contact section */
+
+.containers {
+    border-radius: 5px;
+    background-color: none;
+    padding: 0px;
+    margin: 0% 20% 0% 20%;
+}
+
+
+/* Create two columns that float next to each other */
+
+.columns {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+
+/* Clear floats after the columns */
+
+.rowg:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .columns,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+div.columns img {
+    border-radius: 5px;
+    margin-top: 100px;
+    opacity: 0.8;
+}
+
+.list-unstyled {
+    padding-right: 10px;
+}
+
+div.achieved {
+    padding-top: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: small;
+}
+
+.achieved h2 {
+    color: rgb(255, 255, 255)2, 192, 192)2, 192, 192)2, 192, 192);
+}
+
+div.achieved:hover {
+    -webkit-box-shadow: 3px 2px 3px 2px rgba(255, 255, 253, 0.14);
+    box-shadow: 3px 2px 3px 2px rgba(255, 255, 253, 0.14);
+}
+
+.underline {
+    border-bottom: 3px red solid;
+}
+
+.row>div:hover {
+    transform: scale(1.09);
+}
+
+.row>div>small {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row>div>small>p {
+    font-size: 1.2em;
+}
+
+.botomborder {
+    border-bottom: 3px solid red;
 }

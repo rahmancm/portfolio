@@ -332,8 +332,73 @@
             font-size: 1.2em;
         }
         
-        .botomborder{
-            border-bottom:3px solid red;
+        .botomborder {
+            border-bottom: 3px solid red;
+        }
+        /* CSS animated button  */
+        
+        .btn:link,
+        .btn:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 40px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all .2s;
+            position: absolute;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-white {
+            background-color: #fff;
+            color: #777;
+        }
+        
+        .btn::after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .4s;
+        }
+        
+        .btn-white::after {
+            background-color: #fff;
+        }
+        
+        .btn:hover::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+        
+        .btn-animated {
+            animation: moveInBottom 5s ease-out;
+            animation-fill-mode: backwards;
+        }
+        
+        @keyframes moveInBottom {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
         }
     </style>
 </head>
@@ -350,13 +415,13 @@
             <a href="/" class="navbar-brand">
                 <img src="https://res.cloudinary.com/rahmancm/image/upload/v1603568140/png-transparent-web-development-software-developer-web-developer-computer-icons-world-wide-web-web-design-logo-sign_o5pwzq.png" class="rounded-circle" height="40" alt="development">
             </a>
-            <button style="border-color:white;" id="navbarToggle" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <button style="border-color:white;" id="navbarToggler" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span style="color:white; " class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav" id="toper">
-                    <a href="#" style="color: white;" class="nav-item nav-link active">Home</a>
+                    <a href="#navbarCollapse" style="color: white;" class="nav-item nav-link active">Home</a>
                     <a href="#about" style="color: white;" class="nav-item nav-link active">About</a>
                     <a href="#contact" style="color: white;" class="nav-item nav-link active">Contact</a>
                     <a href="#" style="color: white;" class="nav-item nav-link active">Works</a>
@@ -369,7 +434,10 @@
         <h1>I help grow brands, create </h1>
         <h1>experiences and solve </h1>
         <h1>business problems</h1>
-        <button type="button" class="btn btn-secondary btn-lg" name="button"> <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=arahmancm@gmail.com&body="></a>Get in Touch </button>
+        <div class="text-box">
+            <a href="tel:+919037894567" class="btn btn-white btn-animate"><strong>Get in Touch</strong></a>
+        </div>
+
         <div class="icon1">
             <a style="color:blue;" href="http://www.facebook.com/rahman.cm" class="fa fa-facebook"></a>
             <a style="color:lightblue;" href="" class="fa fa-twitter"></a>
@@ -436,31 +504,31 @@
         </div>
         <div class="container mt-0  ">
             <div class="row  bg-transparent  ">
-                <div class="col-sm-4  mb-1  ">
+                <div class="col-lg-4  mb-1  ">
                     <a href="https://github.com/rahmancm/-Hunters-Job-Board"><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610631808/Potfolio%20Images/job_board_n9dvly.jpg" height='200px' width='300px' alt=""></a>
                     <small class="text-white text-center">
                         <p>Job Board</p> &nbsp; Platform to apply and post Jobs by the employees and employers respectively </small>
                 </div>
-                <div class="col-sm-4  mb-1 ">
+                <div class="col-lg-4  mb-1 ">
                     <a href="https://ipsum-generator-cm.netlify.app"><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610632880/Potfolio%20Images/IpsumGenerator_wdoqxw.jpg" height='200px' width='300px' alt=""></a>
                     <small class="text-white text-center"><p>IpsumGenerator</p> &nbsp; Random Pragraph generator by specifying how many paragraphs you want  </small>
                 </div>
-                <div class="col-sm-4  mb-1 ">
+                <div class="col-lg-4  mb-1 ">
                     <a href="https://the-cocktail-shop.netlify.app"><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610633798/Potfolio%20Images/cockt6ailshop_zctqnj.jpg" height='200px' width='300px' alt=""></a>
                     <small class="text-white text-center"><p>The CocktailShop</p> &nbsp; React application that searches the Coktails based on searching keyword</small>
                 </div>
             </div>
             <div class="row  bg-transparent mt-0 ">
-                <div class="col-sm-4  mb-1   ">
+                <div class="col-lg-4  mb-1   ">
                     <a href="https://menus-submenu-hover.netlify.app"><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610634175/Potfolio%20Images/menuPage_yxbwog.jpg" height='200px' width='300px' alt=""></a>
                     <small class="text-white text-center">
                       <p>Landing page</p> &nbsp; Product landing page with menu hover effect in ReactJS </small>
                 </div>
-                <div class="col-sm-4  mb-1 ">
+                <div class="col-lg-4  mb-1 ">
                     <a href="https://money-manager-exp-cm.netlify.app"><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610640079/Potfolio%20Images/expenseCalulator_jfi28h.jpg" height='200px' width='300px' alt=""></a>
                     <small class="text-white text-center"><p>Expense Manager</p> &nbsp; React App to calculate the income and expenses</small>
                 </div>
-                 <div class="col-sm-4  mb-1 ">
+                <div class="col-lg-4  mb-1 ">
                     <a href="https://grocery-list-cm.netlify.app"><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610702158/Potfolio%20Images/gorcerylist_zlv59g.jpg" height='200px' width='300px' alt=""></a>
                     <small class="text-white text-center"><p>Grocery list</p> &nbsp;React application that is used to store Grocery item list and can be deleted and edited </small>
                 </div>
@@ -518,12 +586,13 @@
            <option value="ind">India</option>
            <option value="dxb">Dubai</option>
            <option value="qtr">Qatar</option>
-           <option value="other">Otherr</option>
+           <option value="other">Other</option>
            
          </select>
                     <label for="subject">Subject</label>
                     <textarea id="subject" name="subject" placeholder="Write something.." style="height:80px"></textarea>
-                    <input type="submit" value="Submit">
+                    <div class="text-box"> <input type="submit" class="btn btn-white btn-animate" value="Submit"></div>
+
                 </form>
             </div>
         </div>
