@@ -323,6 +323,21 @@
         .row>div:hover {
             transform: scale(1.09);
         }
+        .skills{
+            padding:1rem;
+        }
+        .skill-section{
+            display: inline;
+            grid-template-columns: repeat(2fr);
+           margin: 10rem 2rem 10rem 2rem ; 
+
+        }
+        .skill-logo{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            margin:1rem 1rem 1rem 1rem 
+        }
         
         .row>div>small {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -402,15 +417,8 @@
         }
     </style>
 </head>
-
 <body>
-
-
-
-
-
-
-    <div class="bs-example col-sm-3">
+ <div class="bs-example col-sm-3">
         <nav class="navbar navbar-expand-md navbar-light bg-none fixed-top">
             <a href="/" class="navbar-brand">
                 <img src="https://res.cloudinary.com/rahmancm/image/upload/v1603568140/png-transparent-web-development-software-developer-web-developer-computer-icons-world-wide-web-web-design-logo-sign_o5pwzq.png" class="rounded-circle" height="40" alt="development">
@@ -437,25 +445,18 @@
         <div class="text-box">
             <a href="tel:+919037894567" class="btn btn-white btn-animate"><strong>Get in Touch</strong></a>
         </div>
-
         <div class="icon1">
-            <a style="color:blue;" href="http://www.facebook.com/rahman.cm" class="fa fa-facebook"></a>
-            <a style="color:lightblue;" href="" class="fa fa-twitter"></a>
-            <a style="color:#089cff" href="#" class="fa fa-linkedin"></a>
+            <a style="color:blue;"  target='_blank' href="http://www.facebook.com/rahman.cm" class="fa fa-facebook"></a>
+            <a style="color:lightblue;"  target='_blank' href="" class="fa fa-twitter"></a>
+            <a style="color:#089cff"  target='_blank' href="#" class="fa fa-linkedin"></a>
 
-            <a style="color:#ff087b;" href="http://www.instagram.com/rahman.cm" class="fa fa-instagram"></a>
-            <a style="color:#fc0b03;" href="#" class="fa fa-pinterest"></a>
-            <a style="color:#efff08" href="" class="fa fa-snapchat-ghost"></a>
-            <a style="color:white;" href="https://github.com/rahmancm" class="fa fa-github"></a>
-
-
-
+            <a style="color:#ff087b;"  target='_blank' href="http://www.instagram.com/rahman.cm" class="fa fa-instagram"></a>
+            <a style="color:#fc0b03;"  target='_blank' href="#" class="fa fa-pinterest"></a>
+            <a style="color:#efff08"  target='_blank' href="" class="fa fa-snapchat-ghost"></a>
+            <a style="color:white;"  target='_blank' href="https://github.com/rahmancm" class="fa fa-github"></a>
         </div>
     </div>
-
-
-
-    <div class="container-fluid">
+  <div class="container-fluid">
         <div class="jumbotron " style='background:white;margin-right:0px;margin-left:0px;'>
             <h1>LET'S BUILD SOMETHING </h1>
             <h1>AMAZING TOGETHER</h1>
@@ -474,33 +475,32 @@
             <h2>Services</h2>
             <p>Offer a better return on investment than any other form of advertising. If you're planning to market your business, a website should be your first priority. Over time the relatively low investment of getting a business website will pay dividends
                 by driving you new customers and building your brand</p>
-
         </div>
     </div>
 
     <hr>
 
     <div class="container about  col-md-12" id="about">
-
         <img src="https://res.cloudinary.com/rahmancm/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1602760619/45887859_2201546253191552_9219548330550362112_o.jpg_bt01rs.jpg" alt="" class="mr-3 mt-3 rounded-circle" style="width:350px; float:right; opacity:0.5;">
         <p>My name is <strong>Rahman CM</strong> , I'm a software engineer based in KERALA,INDIA.
-            <br>I love designing and building creative functional website. <br> Here are a few technologies I've been working with recently:
-            <ul class="list-unstyled">
-                <li>React.js</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-                <li>Python</li>
-                <li>Django</li>
-
-            </ul>
+            <br>I love designing and building creative functional website. 
+            <div class='skills' >
+                <p>What my Development <br> Skills Included </p>
+               <section class='skill-section' >
+                <img class='skill-logo' src="https://res.cloudinary.com/rahmancm/image/upload/v1623949816/Potfolio%20Images/5-great-react-libraries-1_cmhdsq.png" alt="image">
+                <img class='skill-logo' src="https://res.cloudinary.com/rahmancm/image/upload/v1611568206/Potfolio%20Images/django_liowmh.png" alt="image">
+                <img class='skill-logo' src="https://res.cloudinary.com/rahmancm/image/upload/v1611568205/Potfolio%20Images/download_ff7xnl.png" alt="">
+                <img class='skill-logo' src="https://res.cloudinary.com/rahmancm/image/upload/v1611568205/Potfolio%20Images/download_1_ddhehb.png" alt="">
+                <img class='skill-logo' src="https://res.cloudinary.com/rahmancm/image/upload/v1611568205/Potfolio%20Images/download_sglgvi.jpg" alt="">
+                <img class='skill-logo' src="https://res.cloudinary.com/rahmancm/image/upload/v1623950056/Potfolio%20Images/WordPress-787x413-1_jvxxk4.png" alt="image">
+               </section>
+            </div>
             I enjoy turning complex problems into simple, beautiful and intuitive designs.<br> When I'm not coding, tweeting or pushing pixels, you'll find me traveling,<br> gardening or working out in the park.
         </p>
     </div>
     <div class='projects container achieved botomborder'>
         <h1 class='text-white'>My Projects</h1>
         <div class="underline">
-
         </div>
         <div class="container mt-0  ">
             <div class="row  bg-transparent  ">
@@ -532,7 +532,6 @@
                     <a href="https://grocery-list-cm.netlify.app"><img class='rounded' src="https://res.cloudinary.com/rahmancm/image/upload/v1610702158/Potfolio%20Images/gorcerylist_zlv59g.jpg" height='200px' width='300px' alt=""></a>
                     <small class="text-white text-center"><p>Grocery list</p> &nbsp;React application that is used to store Grocery item list and can be deleted and edited </small>
                 </div>
-
             </div>
         </div>
     </div>
@@ -548,6 +547,10 @@
                         <td> <a href="https://coursera.org/share/9421b06232426561d2ded5848d19b7b9"><i class="fa fa-external-link"></i></a> </td>
                     </tr>
                     <tr>
+                        <td>Git Certification from TESTDOME</td>
+                        <td><a href="https://app.testdome.com/cert/d4a8be0f3d5f412d8d3d122f89e41e1c"><i class="fa fa-external-link"></i></a></td>
+                    </tr>
+                    <tr>
                         <td>Python and Django Full Stack Web Developer Bootcamp</td>
                         <td> <a href="http://ude.my/UC-47c5efab-af84-4aa3-8d22-0792f4261904"><i class="fa fa-external-link"></i></a></td>
                     </tr>
@@ -559,11 +562,9 @@
                         <td>Responsive Web Design from freeCodeCamp</td>
                         <td><a href="https://freecodecamp.org/certification/rahmancm/responsive-web-design"><i class="fa fa-external-link"></i></a></td>
                     </tr>
-
                 </tbody>
             </table>
         </div>
-
     </div>
     <div class="containers">
         <div style="text-align:center ;color:white;">
@@ -587,17 +588,14 @@
            <option value="dxb">Dubai</option>
            <option value="qtr">Qatar</option>
            <option value="other">Other</option>
-           
          </select>
                     <label for="subject">Subject</label>
                     <textarea id="subject" name="subject" placeholder="Write something.." style="height:80px"></textarea>
                     <div class="text-box"> <input type="submit" class="btn btn-white btn-animate" value="Submit"></div>
-
                 </form>
             </div>
         </div>
     </div>
-
     <div class="jumbotron contin box effect7" id="contact">
         <a style="color:white;" href="http://www.facebook.com/rahman.cm" class="fa fa-facebook"></a>
         <a style="color:lightblue;" href="" class="fa fa-twitter"></a>
@@ -606,17 +604,12 @@
         <a style="color:#ff087b;" href="http://www.instagram.com/rahman.cm" class="fa fa-instagram"></a>
         <a style="color:#fc0b03;" href="#" class="fa fa-pinterest"></a>
         <a style="color:#efff08" href="" class="fa fa-snapchat-ghost"></a>
-
-
-
     </div>
     <hr>
     <footer>
         <p>Email: arahmancm@gmail.com</p>
         <p> Ph :903 789 4567</p>
         <p>Copyright &copy; 2020</p>
-
-
         <a href="#">Terms of Use</a>
         <span>|</span>
         <a href="#">Privacy Policy</a>
