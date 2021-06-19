@@ -332,6 +332,13 @@
            margin: 10rem 2rem 10rem 2rem ; 
 
         }
+        .skill-header{
+            color: honeydew;
+            margin: auto;
+            font: bolder;
+            margin: 0rem 0rem  1rem 1rem; 
+        }
+        
         .skill-logo{
             height: 80px;
             width: 80px;
@@ -415,11 +422,15 @@
                 transform: translateY(0px);
             }
         }
+
+        .scrolledNav{
+            background-color: "green" !important;
+        }
     </style>
 </head>
 <body>
  <div class="bs-example col-sm-3">
-        <nav class="navbar navbar-expand-md navbar-light bg-none fixed-top">
+        <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-none fixed-top">
             <a href="/" class="navbar-brand">
                 <img src="https://res.cloudinary.com/rahmancm/image/upload/v1603568140/png-transparent-web-development-software-developer-web-developer-computer-icons-world-wide-web-web-design-logo-sign_o5pwzq.png" class="rounded-circle" height="40" alt="development">
             </a>
@@ -485,9 +496,9 @@
         <p>My name is <strong>Rahman CM</strong> , I'm a software engineer based in KERALA,INDIA.
             <br>I love designing and building creative functional website. 
             <div class='skills' >
-                <p>What my Development <br> Skills Included </p>
+                <p class='skill-header' >What my Development Skills Included ... </p>
                <section class='skill-section' >
-                <img class='skill-logo' src="https://res.cloudinary.com/rahmancm/image/upload/v1623949816/Potfolio%20Images/5-great-react-libraries-1_cmhdsq.png" alt="image">
+                <img  class='rounded-circle' height='80px' width='80px' src="https://res.cloudinary.com/rahmancm/image/upload/v1623949816/Potfolio%20Images/5-great-react-libraries-1_cmhdsq.png" alt="image">
                 <img class='skill-logo' src="https://res.cloudinary.com/rahmancm/image/upload/v1611568206/Potfolio%20Images/django_liowmh.png" alt="image">
                 <img class='skill-logo' src="https://res.cloudinary.com/rahmancm/image/upload/v1611568205/Potfolio%20Images/download_ff7xnl.png" alt="">
                 <img class='skill-logo' src="https://res.cloudinary.com/rahmancm/image/upload/v1611568205/Potfolio%20Images/download_1_ddhehb.png" alt="">
@@ -625,6 +636,17 @@
                 }
             });
         });
+
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+            if(scroll > 200){
+                document.getElementById("navbar").style.background="black";
+            }
+            if(scroll < 200){
+                document.getElementById("navbar").style.background="";
+            }
+
+         }); 
     </script>
 
 </body>
